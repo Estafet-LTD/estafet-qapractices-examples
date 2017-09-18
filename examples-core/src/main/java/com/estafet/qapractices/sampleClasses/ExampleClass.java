@@ -1,7 +1,11 @@
-package com.estafet.qapractices.SampleClasses;
+package com.estafet.qapractices.sampleClasses;
 
 /**
  * Created by Pesho on 01-Sep-17.
+ */
+
+/**
+ * Example class. It will be removed when more code is present in the project.
  */
 public class ExampleClass {
 
