@@ -6,12 +6,17 @@ import com.eviware.soapui.impl.wsdl*;
  */
 public class SOAPUtils {
 
-    public static String createRequestAndResponse(String endPoitUrl, String requestXML, String operationName){
+    public static String createRequestAndResponse(String endPointUrl, String requestXML, String operationName){
         String soapResponse = "";
 
         try{
             WsdlProject project = new WsdlProject();
+            WSdlInterface[] wsdls = WsdlImporter.importWsdl(project,endPointUrl);
+            WSdlInterface wsdl = wsdls[0];
 
+            for (Operation operation : wsdl.getOperationList()){
+
+            }
         }
 
         return soapResponse;
