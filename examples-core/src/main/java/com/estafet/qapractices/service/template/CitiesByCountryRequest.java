@@ -9,7 +9,6 @@ public class CitiesByCountryRequest
             "   <soapenv:Header/>\n" +
             "   <soapenv:Body>\n" +
             "      <web:GetCitiesByCountry>\n" +
-            "         <!--Optional:-->\n" +
             "         <web:CountryName>%s</web:CountryName>\n" +
             "      </web:GetCitiesByCountry>\n" +
             "   </soapenv:Body>\n" +
