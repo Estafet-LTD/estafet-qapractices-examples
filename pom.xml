@@ -78,38 +78,6 @@
             <artifactId>snakeyaml</artifactId>
             <version>1.18</version>
         </dependency>
-
-
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>${poi.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>${poi.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml-schemas</artifactId>
-            <version>${poi.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>wsdl4j</groupId>
-            <artifactId>wsdl4j</artifactId>
-            <version>1.6.3</version>
-        </dependency>
-        <dependency>
-        <groupId>com.github.redfish4ktc.soapui</groupId>
-        <artifactId>soapui</artifactId>
-        <version>4.0.1.0</version>
-        </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.github.redfish4ktc.soapui</groupId>-->
-            <!--<artifactId>maven-soapui-extension-plugin</artifactId>-->
-            <!--<version>4.6.4.2</version>-->
-        <!--</dependency>-->
     </dependencies>
     </dependencyManagement>
 

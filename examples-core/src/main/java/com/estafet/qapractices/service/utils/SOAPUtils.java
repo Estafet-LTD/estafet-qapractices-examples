@@ -1,10 +1,12 @@
 package com.estafet.qapractices.service.utils;
 
 import com.estafet.qapractices.entities.CountryAndCity;
+import com.eviware.soapui.SoapUI;
 import com.eviware.soapui.impl.wsdl.*;
 import com.eviware.soapui.impl.wsdl.support.wsdl.WsdlImporter;
 import com.eviware.soapui.model.iface.Operation;
 import com.eviware.soapui.model.iface.Response;
+import com.eviware.soapui.settings.HttpSettings;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -31,6 +33,7 @@ public class SOAPUtils {
             WsdlProject project = new WsdlProject();
             WsdlInterface[] wsdls = WsdlImporter.importWsdl(project, endPointUrl);
             WsdlInterface wsdl = wsdls[0];
+            SoapUI.getSettings().setBoolean(HttpSettings.RESPONSE_COMPRESSION, false);
             for (Operation operation : wsdl.getOperationList()) {
                 WsdlOperation op = (WsdlOperation) operation;
                 if (op.getName().equalsIgnoreCase(operationName)) {
