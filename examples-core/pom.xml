@@ -42,5 +42,29 @@
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-guice</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>wsdl4j</groupId>
+            <artifactId>wsdl4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.redfish4ktc.soapui</groupId>
+            <artifactId>soapui</artifactId>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.github.redfish4ktc.soapui</groupId>-->
+            <!--<artifactId>maven-soapui-extension-plugin</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 </project>
