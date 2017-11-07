@@ -28,7 +28,7 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty", "html:target/cucumber-reports",
                 "json:target/cucumber-reports/cucumber.json"},
-        tags = {"@Rest"}
+        tags = {"@Rest123"}
 )
 //Always end Junit test class with the word "Test" if you want to run it with Maven!
 public class RunTests {

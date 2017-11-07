@@ -2,6 +2,7 @@ package com.estafet.qapractices.stepDefs;
 
 import com.estafet.qapractices.context.Context;
 import com.estafet.qapractices.models.HttpBinModel;
+import com.estafet.qapractices.rest.CloudConvertTasks;
 import com.estafet.qapractices.rest.HttpBinTasks;
 import com.google.common.collect.Maps;
 import com.google.inject.Inject;
@@ -19,11 +20,14 @@ public final class RestApiStepDefs {
 
     private HttpBinTasks httpBinTasks;
     private Context context;
+    private CloudConvertTasks cloudConvertTasks;
 
     @Inject
-    public RestApiStepDefs(final HttpBinTasks httpBinTasks, final Context context) {
+    public RestApiStepDefs(final HttpBinTasks httpBinTasks, final Context context,
+                           final CloudConvertTasks cloudConvertTasks) {
         this.httpBinTasks = httpBinTasks;
         this.context = context;
+        this.cloudConvertTasks = cloudConvertTasks;
     }
 
     @Given("^an user sends a GET request$")
@@ -56,6 +60,12 @@ public final class RestApiStepDefs {
 
         final Response response = httpBinTasks.postMethodResponse(model);
         context.saveData("response", response);
+    }
+
+    @Given("^a user creates a process$")
+    public void userCreatesProcess() {
+        Response response = cloudConvertTasks.createProcess("flv", "mp4");
+        System.out.println("pe6o " + response.readEntity(String.class));
     }
 
 }

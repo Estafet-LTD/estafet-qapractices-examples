@@ -2,3 +2,5 @@
 #The env is loaded in the Environment class
 defaultTestEnvironment: &defaultTestEnvironment
   apiUrl: "http://httpbin.org"
+  cloudConvertUrl: "https://api.cloudconvert.com/"
+  cloudConvertKey: " Y4V9FKxvJFWRO4GamKb_FH7YchRq2x44j7SV-2V06bwxdiGeGZHmUfhAujhyzdQ-hqm6lnnm8UHagMu9RYWQ"
