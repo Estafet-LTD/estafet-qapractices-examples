@@ -2,3 +2,4 @@
 #The env is loaded in the Environment class
 defaultTestEnvironment: &defaultTestEnvironment
   apiUrl: "http://httpbin.org"
+  reqresUrl: "https://reqres.in/api/"
