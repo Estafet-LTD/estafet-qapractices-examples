@@ -31,6 +31,21 @@ public class Environment {
         init();
     }
 
+    private static void listFiles(final File parentDirectory, final String regex, final List<File> files) {
+        final File listFiles[] = parentDirectory.listFiles();
+        if (files != null) {
+            for (int i = 0; i < listFiles.length; i++) {
+                if (listFiles[i].isDirectory()) {
+                    listFiles(listFiles[i], regex, files);
+                } else {
+                    if (listFiles[i].getName().matches(regex)) {
+                        files.add(listFiles[i]);
+                    }
+                }
+            }
+        }
+    }
+
     public String getProperty(final String key) {
         final String property = (String) environment.get(key);
         if (property == null) {
@@ -70,20 +85,5 @@ public class Environment {
         final List<File> matchedFiles = new ArrayList<File>();
         listFiles(parentDirectory, regex, matchedFiles);
         return matchedFiles.toArray(new File[matchedFiles.size()]);
-    }
-
-    private static void listFiles(final File parentDirectory, final String regex, final List<File> files) {
-        final File listFiles[] = parentDirectory.listFiles();
-        if (files != null) {
-            for (int i = 0; i < listFiles.length; i++) {
-                if (listFiles[i].isDirectory()) {
-                    listFiles(listFiles[i], regex, files);
-                } else {
-                    if (listFiles[i].getName().matches(regex)) {
-                        files.add(listFiles[i]);
-                    }
-                }
-            }
-        }
     }
 }

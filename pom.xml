@@ -19,7 +19,7 @@
         <dependencies>
             <dependency>
                 <groupId>com.estafet.examples</groupId>
-                <artifactId>examples-core</artifactId>
+                <artifactId>examples-rest</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -82,7 +82,7 @@
     </dependencyManagement>
 
     <modules>
-        <module>examples-core</module>
-        <module>examples-tests</module>
+        <module>examples-rest</module>
+        <module>examples-soap-ws</module>
     </modules>
 </project>

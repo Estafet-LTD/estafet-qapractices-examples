@@ -30,20 +30,20 @@ public class ReqResUserModel {
         return firstName;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
     public void setFirstName(final String firstName) {
         this.firstName = firstName;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
     public void setLastName(final String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getAvatar() {
+        return avatar;
     }
 
     public void setAvatar(final String avatar) {

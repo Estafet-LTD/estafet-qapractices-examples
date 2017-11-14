@@ -11,21 +11,17 @@ import java.util.List;
 public class ReqResUsersModel {
 
     @Expose
+    List<ReqResUserModel> data;
+    @Expose
     private String page;
-
     @Expose
     @SerializedName("per_page")
     private String perPage;
-
     @Expose
     private String total;
-
     @Expose
     @SerializedName("total_pages")
     private String totalPages;
-
-    @Expose
-    List<ReqResUserModel> data;
 
     public String getPage() {
         return page;
