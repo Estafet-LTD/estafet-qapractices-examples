@@ -4,7 +4,6 @@ import com.estafet.qapractices.context.Context;
 import com.estafet.qapractices.models.HttpBinModel;
 import com.estafet.qapractices.models.ReqResUserModel;
 import com.estafet.qapractices.rest.HttpBinTasks;
-import com.estafet.qapractices.rest.ReqResApi;
 import com.estafet.qapractices.rest.ReqResTasks;
 import com.google.common.collect.Maps;
 import com.google.inject.Inject;
