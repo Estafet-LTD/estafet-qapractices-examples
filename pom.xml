@@ -85,5 +85,6 @@
         <module>examples-rest</module>
         <module>examples-soap-ws</module>
         <module>examples-soap2</module>
+        <module>examples-selenium</module>
     </modules>
 </project>
