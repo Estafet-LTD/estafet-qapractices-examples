@@ -22,7 +22,8 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        glue = {"com.estafet.qapractices.stepDefs"
+        glue = {"com.estafet.qapractices.stepDefs",
+                "com.estafet.qapractices.hooks"
         },
         features = {"src/test/resources/features/"},
         plugin = {

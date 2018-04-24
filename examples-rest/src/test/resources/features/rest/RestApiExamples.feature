@@ -1,6 +1,6 @@
 Feature: ReST API example tests
 
-  @Rest
+  @Rest123
   Scenario: An user can send GET requests
     Given an user sends a GET request
     And the response fot method "get" is valid

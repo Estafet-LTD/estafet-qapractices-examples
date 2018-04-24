@@ -1,13 +1,18 @@
 package com.estafet.qapractices.rest;
 
 import com.estafet.qapractices.env.Environment;
+import com.estafet.qapractices.exceptions.TestException;
 import com.estafet.qapractices.models.HttpBinModel;
 import com.google.inject.Inject;
+import org.awaitility.core.ConditionTimeoutException;
 import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 
 import javax.ws.rs.core.Response;
+
+import static java.util.concurrent.TimeUnit.SECONDS;
+import static org.awaitility.Awaitility.await;
 
 /**
  * Created by Pesho on 15-Sep-17.
@@ -42,7 +47,29 @@ public class HttpBinTasks {
      * Everything else should be private.
      */
     public Response getMethodResponse() {
-        return httpBinApi.getMethod();
+        /**
+         * This has to be an array. Trust me! Do not try to change it.
+         */
+        final Response[] response = new Response[1];
+        final int pollingIntervalInSeconds = 5;
+        final int pollTimeoutInSeconds = 60;
+        /**
+         * This is Awaitility. This block polls the API endpoint until the response code is 200.
+         * The lambda expression is executed every "pollingIntervalInSeconds" for max period of "pollTimeoutInSeconds".
+         * If the expression returns True, the execution continues.
+         * If it does not before "pollTimeoutInSeconds" is reached, a ConditionTimeoutException is thrown.
+         */
+        try {
+            await().with().pollInterval(pollingIntervalInSeconds, SECONDS)
+                    .atMost(pollTimeoutInSeconds, SECONDS).await("Polling for feature update")
+                    .until(() -> {
+                response[0] = httpBinApi.getMethod();
+                        return response[0].getStatus() == 200;
+                    });
+        } catch (ConditionTimeoutException e) {
+            throw new TestException(e.getMessage() + " status code is not 200");
+        }
+        return response[0];
     }
 
     public Response postMethodResponse(final HttpBinModel model) {

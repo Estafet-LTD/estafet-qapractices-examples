@@ -1,6 +1,7 @@
 package com.estafet.qapractices.context;
 
 import com.google.common.collect.Maps;
+import cucumber.api.Scenario;
 import cucumber.runtime.java.guice.ScenarioScoped;
 
 import java.util.Map;
@@ -24,12 +25,25 @@ public class Context {
      */
     private Map<String, Object> dataMap = Maps.newHashMap();
 
+    private Scenario scenario;
+
     public void saveData(final String identifier, final Object data) {
         this.dataMap.put(identifier, data);
     }
 
     public Object getSavedData(final String identifier) {
         return dataMap.get(identifier);
+    }
+
+    public void setScenario(final Scenario scenario) {
+        this.scenario = scenario;
+    }
+
+    /**
+     *  Writes a string to the default output (console). Use this instead of println()
+     */
+    public void writeOut(final String message) {
+        this.scenario.write(message);
     }
 
 

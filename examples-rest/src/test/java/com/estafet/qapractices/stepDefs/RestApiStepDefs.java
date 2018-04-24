@@ -11,6 +11,7 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.assertj.core.api.SoftAssertions;
 import org.junit.Assert;
 
 import javax.ws.rs.core.Response;
@@ -45,11 +46,18 @@ public final class RestApiStepDefs {
         final Response response = (Response) context.getSavedData("response");
         final String responseString = response.readEntity(String.class);
         final String SITE_URL = "http://httpbin.org/";
-        //TODO We should avoid using println in the code but this is an example so we'll allow it.
-        System.out.println("Response:\n" + responseString);
-        Assert.assertEquals("Response code does not match", 200, response.getStatus());
-        Assert.assertTrue("Response does not contain the expected URL",
-                responseString.contains(SITE_URL + method));
+        context.writeOut("Response:\n" + responseString);
+        /**
+         * This is a soft assert (AssertJ). Using this gives us an important advantage:
+         * With the standard JUnit assert (bet you didn't know they were called that way) the test execution fails
+         * after the first AssertionError. Using soft assert, all assertions are made without interruption.
+         * At the end we call softly.assertAll() and then everything is asserted at once. This way we will have information
+         * for each assertion.
+         */
+        final SoftAssertions softly = new SoftAssertions();
+        softly.assertThat(response.getStatus() == 200);
+        softly.assertThat(responseString.contains(SITE_URL + method));
+        softly.assertAll();
     }
 
     @Given("^an user sends a POST request with the following parameters$")
