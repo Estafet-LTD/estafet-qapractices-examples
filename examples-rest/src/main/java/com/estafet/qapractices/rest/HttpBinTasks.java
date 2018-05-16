@@ -47,17 +47,17 @@ public class HttpBinTasks {
      * Everything else should be private.
      */
     public Response getMethodResponse() {
-        /**
-         * This has to be an array. Trust me! Do not try to change it.
+        /*
+          This has to be an array. Trust me! Do not try to change it.
          */
         final Response[] response = new Response[1];
         final int pollingIntervalInSeconds = 5;
         final int pollTimeoutInSeconds = 60;
-        /**
-         * This is Awaitility. This block polls the API endpoint until the response code is 200.
-         * The lambda expression is executed every "pollingIntervalInSeconds" for max period of "pollTimeoutInSeconds".
-         * If the expression returns True, the execution continues.
-         * If it does not before "pollTimeoutInSeconds" is reached, a ConditionTimeoutException is thrown.
+        /*
+          This is Awaitility. This block polls the API endpoint until the response code is 200.
+          The lambda expression is executed every "pollingIntervalInSeconds" for max period of "pollTimeoutInSeconds".
+          If the expression returns True, the execution continues.
+          If it does not before "pollTimeoutInSeconds" is reached, a ConditionTimeoutException is thrown.
          */
         try {
             await().with().pollInterval(pollingIntervalInSeconds, SECONDS)

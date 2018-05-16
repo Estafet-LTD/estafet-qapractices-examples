@@ -47,12 +47,12 @@ public final class RestApiStepDefs {
         final String responseString = response.readEntity(String.class);
         final String SITE_URL = "http://httpbin.org/";
         context.writeOut("Response:\n" + responseString);
-        /**
-         * This is a soft assert (AssertJ). Using this gives us an important advantage:
-         * With the standard JUnit assert (bet you didn't know they were called that way) the test execution fails
-         * after the first AssertionError. Using soft assert, all assertions are made without interruption.
-         * At the end we call softly.assertAll() and then everything is asserted at once. This way we will have information
-         * for each assertion.
+        /*
+          This is a soft assert (AssertJ). Using this gives us an important advantage:
+          With the standard JUnit assert (bet you didn't know they were called that way) the test execution fails
+          after the first AssertionError. Using soft assert, all assertions are made without interruption.
+          At the end we call softly.assertAll() and then everything is asserted at once. This way we will have information
+          for each assertion.
          */
         final SoftAssertions softly = new SoftAssertions();
         softly.assertThat(response.getStatus() == 200);

@@ -5,10 +5,12 @@ Feature: Use Skyscreamer's JSONAssert to compare JSONs
     Given the user has a JSON
     """
     {
+       "unwantedParameterInRoot" : "nobodyExpects",
        "nodes":[
           {
              "nodeType":"http://alertme.com/schema/json/node.class.synthetic.testing_mirror_device.json#",
              "parentNodeId":"someRandomNumber",
+             "additionalUnwantedParameter" : "thespanishincquisition",
              "name":"FakeContact2",
              "features":{
                 "contact_sensor_v1":{
