@@ -14,3 +14,4 @@ Feature: ReST API example tests
       | Cup size   | B-C         |
       | Measures   | 170-90-100  |
     And the response fot method "post" is valid
+    

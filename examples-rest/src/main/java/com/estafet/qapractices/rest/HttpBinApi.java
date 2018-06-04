@@ -37,3 +37,5 @@ public interface HttpBinApi {
     Response postMethod(@QueryParam("userName") String username, @QueryParam("length") String length,
                         @QueryParam("cupSize") String cupSize, @QueryParam("measures") String measures);
 }
+ 
+
