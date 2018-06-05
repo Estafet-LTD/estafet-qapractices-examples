@@ -6,18 +6,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-
 import org.assertj.core.api.SoftAssertions;
 import org.awaitility.Awaitility;
 import org.awaitility.core.ConditionTimeoutException;
-
-import com.estafet.qapractices.api.ApiHooks;
 import com.estafet.qapractices.context.Context;
 import com.estafet.qapractices.model.ReqResUserModel;
 import com.estafet.qapractices.model.ReqResUsersModel;
 import com.google.gson.Gson;
 import com.google.inject.Inject;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -29,26 +25,12 @@ public class ReqRest {
 
 	private Context context;
 	
-	private final String GETPATH = "/users/";
-	private final String POSTPATH = "/users/";
-	private final String PUTPATH = "/users/";
-	private final String DELETEPATH = "/users/";
 	private Response response;
 	private ValidatableResponse validateResponse;
-	private ApiHooks apiHooks;
 
 	@Inject
 	public ReqRest(Context context) {
 		this.context = context; 
-		
-		
-		/*
-		 * baseURI method will set globally the URI that you want to connect. It have to
-		 * be setted into a constructor or method. After that in given() method of
-		 * RestAssured class, this URI will be loaded automatically.
-		 */
-		RestAssured.baseURI = "https://reqres.in/api";
-		
 
 	}
 
@@ -56,12 +38,12 @@ public class ReqRest {
 		/*
 		 * With ValidateResponse class, we can make request(GET,PUT,POST ... etc.) and verifications and assertions without using the Assert or SoftAssert.
 		 */
-		validateResponse = RestAssured.given().contentType("application/json").when().get(GETPATH).then()
+		validateResponse = RestAssured.given().contentType("application/json").when().get().then()
 				.statusCode(200);
 
 	}
 
-	public Response getRequestRestApi() throws Exception {
+	public Response getRequestRestApi()  {
 		int pollingIntervalSeconds = 5;
 		int pollingRangeTimeout = 60;
 		try {
@@ -74,13 +56,18 @@ public class ReqRest {
 
 			Awaitility.await().pollInterval(pollingIntervalSeconds, TimeUnit.SECONDS)
 					.atMost(pollingRangeTimeout, TimeUnit.SECONDS).await().until(() -> {
-						response = RestAssured.given().when().get(GETPATH);
+						response = RestAssured.given().when().get();
 						context.saveData("get response", response.getStatusCode());
 						context.saveData("body", response.asString());
 						return response.getStatusCode() == 200;
 					});
 		} catch (ConditionTimeoutException e) {
-			throw new Exception(e.getMessage() + " status code is not 200");
+			try {
+				throw new Exception(e.getMessage() + " status code is not 200");
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 
 		return response;
@@ -97,9 +84,9 @@ public class ReqRest {
 		 * The basic structure of the request goes first with given() -> here it loads the URI , after this is the contentType -> format of the message,
 		 *  body() -> here we post the required data, when() -> requested specification and the request(in this case is post) ->  with the requested path.
 		 */
-		response = RestAssured.given().contentType("application/json").body(mapParam).when().post(POSTPATH);
+		response = RestAssured.given().contentType("application/json").body(mapParam).when().post();
 
-		assertTrue(response.getStatusCode() == 201);
+		assertTrue("Status code is not 201",response.getStatusCode() == 201);
 		context.saveData("post response", response.getStatusCode());
 		context.saveData("body", response.asString());
 
@@ -130,7 +117,7 @@ public class ReqRest {
 
 	public ReqResUsersModel listAllUsers() {
 		final Gson gson = new Gson();
-		String users = RestAssured.given().queryParam("per_page", 1000).get(GETPATH).getBody().asString();
+		String users = RestAssured.given().queryParam("per_page", 1000).get().getBody().asString();
 
 		ReqResUsersModel model = gson.fromJson(users, ReqResUsersModel.class);
 
@@ -159,12 +146,12 @@ public class ReqRest {
 		Map<String, String> userMap = new HashMap<>();
 		String firstName = name.split(" ")[0];
 		String lastName = name.split(" ")[1];
-
+		String userId = (String) context.getSavedData("userId");
 		userMap.put("first_name", firstName);
 		userMap.put("last_name", lastName);
 
 		response = RestAssured.given().contentType("application/json").body(userMap).when()
-				.put(PUTPATH + context.getSavedData("userId"));
+				.put(userId);
 		System.out.println(response.getBody().asString());
 		SoftAssertions soft = new SoftAssertions();
 		soft.assertThat(response.getStatusCode() == 200);
@@ -172,10 +159,11 @@ public class ReqRest {
 	}
 
 	public void deleteUserById() {
+		String userId = (String) context.getSavedData("userId");
 		response = RestAssured.given().contentType("application/json").when()
-				.delete(DELETEPATH + context.getSavedData("userId"));
+				.delete(userId);
 		System.out.println(response.getStatusCode());
-		assertTrue(response.getStatusCode() == 204);
+		assertTrue("Status code is not 204",response.getStatusCode() == 204);
 
 	}
 

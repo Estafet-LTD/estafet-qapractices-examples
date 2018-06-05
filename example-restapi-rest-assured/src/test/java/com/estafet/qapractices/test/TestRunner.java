@@ -7,9 +7,10 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\DELL 3\\eclipse-workspace\\TestRestApiWithCucumber\\src\\test\\resources\\future",
-				 glue = "com.estafet.qapractices.test",
-				 tags = "@rest1",
+@CucumberOptions(features = "src/test/resources/resources/future",
+				 glue = {"com.estafet.qapractices.test",
+						 "com.estafet.qapractices.api"},
+				 tags = "@rest",
 				 plugin = {"pretty","html:target/cucumber-report"}	)
 public class TestRunner {
 

@@ -1,4 +1,4 @@
-package com.estefet.qapractices.request;
+package com.estafet.qapractices.request;
 /*
  * Created by Anton Rusanov on 31/05/2018
  */
@@ -6,7 +6,7 @@ public class CreateRequest {
 	
 	private String bankCode ;
 	
-	public String body;
+	private String body;
 	private String xmlNode;
 	public String getBody() {
 		return body;

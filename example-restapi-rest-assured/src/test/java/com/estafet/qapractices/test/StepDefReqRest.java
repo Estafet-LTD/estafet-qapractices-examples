@@ -25,50 +25,50 @@ public class StepDefReqRest {
 	}
 	
 	@Given("^user send a get request$")
-	public void user_send_a_get_request() throws Exception {
+	public void sendingGetRequest() {
 	   reqRest.getRequestRestApi();
 	    
 	}
 
 	@Given("^the status for get request is valid$")
-	public void the_status_for_get_request_is_valid() {
+	public void assertGetStatus() {
 	    reqRest.getResponseCode();
 	}
 	
 	@Given("^user list all users$")
-	public void user_list_all_users()  {
+	public void listAllUsers()  {
 	   List<ReqResUserModel> users = reqRest.listAllUsers().getData();
 	   context.saveData("users", users);
 	   
 	}
 
 	@When("^user send a post request to create \"([^\"]*)\"$")
-	public void user_send_a_post_request_to_create(String name)  {
+	public void sendingPostRequest(String name)  {
 	    reqRest.postRequestRestApi(name);
 	}
 
 	@Then("^chek the status for post request is valid$")
-	public void chek_the_status_for_post_request_is_valid() throws Throwable {
+	public void assertPostStatus()  {
 	    reqRest.postResponseCode();
 	}
 	
 	@When("^user check if \"([^\"]*)\" as user exist and collect user ID$")
-	public void user_check_if_as_user_exist_and_collect_user_ID(String name)  {
+	public void checkUserAndGetUserId(String name)  {
 	    reqRest.chekUserAndGetId(name);
 	    
 	}
 
 	@Then("^user can be updated to \"([^\"]*)\"$")
-	public void user_can_be_updated_to(String name) throws Throwable {
+	public void sendingPutRequest(String name) throws Throwable {
 		reqRest.putRequestRestApiById(name);
 	}
 	
 	@Then("^user can be deleted$")
-	public void user_can_be_deleted()  {
+	public void sendingDeleteRequest()  {
 	    reqRest.deleteUserById();
 	}
 	@Given("^user send a get request and status is valid$")
-	public void user_send_a_get_request_and_status_is_valid() {
+	public void sendingGetRequestAndAssert() {
 	    reqRest.getReqWithVerify();
 	}
 

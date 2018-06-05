@@ -1,5 +1,5 @@
 Feature: SOAP request with Rest Assured
-@soap1
+@soap
 Scenario Outline: scenario description
 	Given a request with bank code <bank_code> is send
 	Then bank name in response xml should be <bank_name>

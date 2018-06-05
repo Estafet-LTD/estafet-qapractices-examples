@@ -3,6 +3,7 @@ package com.estafet.qapractices.api;
 
 import com.estafet.qapractices.context.Context;
 import com.estafet.qapractices.core.ReqRest;
+import com.estafet.qapractices.env.Environment;
 import com.google.inject.Inject;
 
 import cucumber.api.Scenario;
@@ -14,12 +15,14 @@ import io.restassured.RestAssured;
 
 @ScenarioScoped
 public class ApiHooks {
-	private ReqRest request;
+	
 	private Context context;
+	private Environment env;
 	
 	@Inject
-	public ApiHooks(Context context) {
+	public ApiHooks(Context context,Environment env ) {
 		this.context = context; 
+		this.env = env;
 		
 	}
 	@Before
@@ -27,13 +30,21 @@ public class ApiHooks {
         this.context.setScenario(scenario);
     }
 	
-	@Before("@rest1")
+	@Before("@rest")
 	public void apiData() {
 		System.out.println("Start test");
-		RestAssured.basePath = "https://reqres.in/api"; 
+		/*
+		 * baseURI method will set globally the URI that you want to connect. It have to
+		 * be setted into a constructor or method. After that in given() method of
+		 * RestAssured class, this URI will be loaded automatically.
+		 * basePath method will set the end point for the API.
+		 */
+		
+		RestAssured.baseURI = env.getProperty("baseURI"); 
+		RestAssured.basePath = env.getProperty("basePath");
 		
 	}
-	@After("@rest1")
+	@After("@rest")
 	public void after() {
 		System.out.println("End of test");
 	}
