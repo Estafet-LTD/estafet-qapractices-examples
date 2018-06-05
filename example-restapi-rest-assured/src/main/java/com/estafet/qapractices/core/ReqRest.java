@@ -61,13 +61,9 @@ public class ReqRest {
 						context.saveData("body", response.asString());
 						return response.getStatusCode() == 200;
 					});
-		} catch (ConditionTimeoutException e) {
-			try {
-				throw new Exception(e.getMessage() + " status code is not 200");
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage() + " status code is not 200");
+			
 		}
 
 		return response;
