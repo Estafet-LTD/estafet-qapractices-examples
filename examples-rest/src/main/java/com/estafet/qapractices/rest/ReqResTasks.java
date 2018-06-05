@@ -52,4 +52,7 @@ public class ReqResTasks {
     private String getJsonString(final Object object) {
         return new Gson().toJson(object);
     }
+    public Response deleteUser(final String id) {
+    	return reqResApi.deleteUser(id);
+    }
 }

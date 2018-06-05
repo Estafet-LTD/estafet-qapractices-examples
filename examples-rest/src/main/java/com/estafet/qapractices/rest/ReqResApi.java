@@ -23,4 +23,8 @@ public interface ReqResApi {
     @Consumes("application/x-www-form-urlencoded")
     Response updateUser(@PathParam("") String index,
                         String body);
+    @DELETE
+    @Path("/users/")
+    @Consumes("application/x-www-form-urlencoded")
+    Response deleteUser(@PathParam("id") String id);
 }

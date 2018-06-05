@@ -1,0 +1,5 @@
+#This is the default environment. Store resources under it- URLs, credentials, etc.
+#The env is loaded in the Environment class
+defaultTestEnvironment: &defaultTestEnvironment
+  baseURI: "https://reqres.in/api/"
+  basePath: "users/"

@@ -1,0 +1,11 @@
+2018-05-29 14:55:51,813 ERROR [errorlog] com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+com.eviware.soapui.impl.support.definition.support.InvalidDefinitionException
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.makeInvalidDefinitionException(WsdlLoader.java:119)
+	at com.eviware.soapui.impl.wsdl.support.wsdl.WsdlLoader.loadXmlObject(WsdlLoader.java:109)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:488)
+	at com.eviware.soapui.impl.wsdl.support.xsd.SchemaUtils.getDefinitionParts(SchemaUtils.java:477)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionCache.update(AbstractDefinitionCache.java:94)
+	at com.eviware.soapui.impl.support.definition.support.AbstractDefinitionContext$Loader.construct(AbstractDefinitionContext.java:209)
+	at com.eviware.soapui.support.swing.SwingWorkerDelegator.construct(SwingWorkerDelegator.java:46)
+	at com.eviware.soapui.support.swing.SwingWorker$2.run(SwingWorker.java:131)
+	at java.lang.Thread.run(Unknown Source)
