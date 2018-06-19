@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>estafet-qapractices-examples</artifactId>
+        <groupId>com.estafet.examples</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>estafet-qapractices-examples</artifactId>
+
+    <properties>
+        <jmeter.analysis.maven.plugin.version>1.0.6</jmeter.analysis.maven.plugin.version>
+        <jmeter-maven-plugin.version>2.6.0</jmeter-maven-plugin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- execute JMeter test -->
+            <plugin>
+                <groupId>com.lazerycode.jmeter</groupId>
+                <artifactId>jmeter-maven-plugin</artifactId>
+                <version>${jmeter-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>test</id>
+                        <goals>
+                            <goal>jmeter</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <ignoreResultFailures>true</ignoreResultFailures>
+                    <generateReports>true</generateReports>
+                    <resultsFileFormat>xml</resultsFileFormat>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.lazerycode.jmeter</groupId>
+                <artifactId>jmeter-analysis-maven-plugin</artifactId>
+                <version>${jmeter.analysis.maven.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>analyze</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!--
+                  source file that contains jmeter result data. Needs to be XML format or a GZIPed XML format
+                  -->
+                    <!--...-->
+                    <source>${project.basedir}/src/test/jmeter/*</source>
+                    <!--
+                   directory where to store analysis report files. At least a file "summary.txt" will be stored here.
+                   -->
+                    <!--...-->
+                    <targetDirectory>${project.build.directory}/reports</targetDirectory>
+                    <processAllFilesFound>true</processAllFilesFound>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>

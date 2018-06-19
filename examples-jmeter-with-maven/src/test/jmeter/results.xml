@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="358" it="0" lt="358" ct="215" ts="1529415509731" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-1" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="274" it="0" lt="274" ct="130" ts="1529415509836" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-2" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="274" it="0" lt="274" ct="132" ts="1529415509938" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-3" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="140" it="0" lt="140" ct="0" ts="1529415510090" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-1" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="135" it="0" lt="135" ct="0" ts="1529415510112" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-2" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="287" it="0" lt="287" ct="140" ts="1529415510038" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-4" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="139" it="0" lt="139" ct="0" ts="1529415510213" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-3" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="283" it="0" lt="283" ct="137" ts="1529415510138" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-5" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="144" it="0" lt="144" ct="0" ts="1529415510326" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-4" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="274" it="0" lt="274" ct="134" ts="1529415510240" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-6" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="146" it="0" lt="146" ct="0" ts="1529415510422" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-5" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="273" it="0" lt="273" ct="133" ts="1529415510339" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-7" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="141" it="0" lt="141" ct="0" ts="1529415510515" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-6" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="287" it="0" lt="287" ct="139" ts="1529415510440" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-8" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="172" it="0" lt="172" ct="0" ts="1529415510613" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-7" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="276" it="0" lt="276" ct="133" ts="1529415510540" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-9" dt="text" by="725" sby="336" ng="3" na="3">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="144" it="0" lt="144" ct="0" ts="1529415510728" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-8" dt="text" by="725" sby="336" ng="3" na="3">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="275" it="0" lt="275" ct="134" ts="1529415510640" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-10" dt="text" by="725" sby="336" ng="2" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="174" it="0" lt="174" ct="0" ts="1529415510816" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-9" dt="text" by="725" sby="336" ng="2" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="142" it="0" lt="142" ct="0" ts="1529415510916" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-10" dt="text" by="725" sby="336" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744156" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u1&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-1" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744166" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u1&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-1" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744206" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u2&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-2" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744208" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u2&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-2" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744306" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u3&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-3" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744308" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u3&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-3" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744406" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u4&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-4" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744409" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u4&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-4" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744506" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u5&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-5" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744508" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u5&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-5" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744612" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u1&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-6" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744614" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u1&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-6" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744713" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u2&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-7" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744715" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u2&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-7" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744813" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u3&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-8" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744815" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u3&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-8" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744913" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u4&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-9" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415744915" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u4&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-9" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415745014" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u5&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-10" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415745015" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u5&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-10" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828505" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u1&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-1" dt="text" by="1136" sby="0" ng="2" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828505" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u2&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-2" dt="text" by="1136" sby="0" ng="2" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828524" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u1&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-1" dt="text" by="1136" sby="0" ng="2" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828524" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u2&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-2" dt="text" by="1136" sby="0" ng="2" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828600" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u3&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-3" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828602" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u3&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-3" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828701" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u4&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-4" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828703" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u4&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-4" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828807" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u5&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-5" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828810" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u5&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-5" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828908" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u1&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-6" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415828912" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u1&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-6" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415829008" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u2&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-7" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415829009" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u2&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-7" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415829108" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u3&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-8" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415829111" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u3&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-8" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415829208" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u4&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-9" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415829210" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u4&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-9" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415829308" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u5&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-10" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1529415829310" s="false" lb="Get anything passed" rc="Non HTTP response code: java.net.URISyntaxException" rm="Non HTTP response message: Illegal character in query at index 50: http://httpbin.org/anything?username=u5&amp;password=${passworffd}" tn="Get Anything Passed in a Request 1-10" dt="text" by="1136" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: java.net.URISyntaxException]]]
+
+****** comparison: [[[200                                                ]]]
+
+/</failureMessage>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="307" it="0" lt="307" ct="134" ts="1529415882632" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-3" dt="text" by="725" sby="336" ng="6" na="6">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="454" it="0" lt="454" ct="273" ts="1529415882483" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-1" dt="text" by="725" sby="336" ng="6" na="6">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="405" it="0" lt="404" ct="225" ts="1529415882532" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-2" dt="text" by="725" sby="336" ng="6" na="6">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="280" it="0" lt="280" ct="137" ts="1529415882732" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-4" dt="text" by="725" sby="336" ng="6" na="6">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="140" it="0" lt="140" ct="0" ts="1529415882959" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-2" dt="text" by="725" sby="336" ng="7" na="7">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="147" it="0" lt="147" ct="0" ts="1529415882956" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-3" dt="text" by="725" sby="336" ng="6" na="6">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="146" it="0" lt="146" ct="0" ts="1529415882959" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-1" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="287" it="0" lt="287" ct="139" ts="1529415882833" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-5" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="151" it="0" lt="151" ct="0" ts="1529415883013" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-4" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="276" it="0" lt="276" ct="135" ts="1529415882941" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-6" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="149" it="0" lt="149" ct="0" ts="1529415883121" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-5" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="284" it="0" lt="284" ct="138" ts="1529415883037" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-7" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="142" it="0" lt="142" ct="0" ts="1529415883218" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-6" dt="text" by="725" sby="336" ng="5" na="5">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="279" it="0" lt="279" ct="135" ts="1529415883138" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-8" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="147" it="0" lt="147" ct="0" ts="1529415883323" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-7" dt="text" by="725" sby="336" ng="4" na="4">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="142" it="0" lt="142" ct="0" ts="1529415883418" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-8" dt="text" by="725" sby="336" ng="3" na="3">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="275" it="0" lt="275" ct="133" ts="1529415883339" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-10" dt="text" by="725" sby="336" ng="2" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="448" it="0" lt="448" ct="129" ts="1529415883238" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-9" dt="text" by="725" sby="336" ng="2" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="141" it="0" lt="141" ct="0" ts="1529415883615" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-10" dt="text" by="725" sby="336" ng="2" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="144" it="0" lt="144" ct="0" ts="1529415883687" s="true" lb="Get anything passed" rc="200" rm="OK" tn="Get Anything Passed in a Request 1-9" dt="text" by="725" sby="336" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+</testResults>
