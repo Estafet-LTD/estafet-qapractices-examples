@@ -18,7 +18,7 @@ SOAP services
 After cloning the repository you will be able to run the tests from each module. No additional configuration is required.
 Upon cloning execute:
 ```
-mvn clean install
+mvn clean install -DskipTests
 ```
 Each module has a `RunTests` JUnit class which executed a subset of tests from the current module based nad the `tags` option.
 ## For Linux/Mac
