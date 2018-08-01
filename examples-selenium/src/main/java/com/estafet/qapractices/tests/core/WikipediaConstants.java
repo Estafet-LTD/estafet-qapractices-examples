@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.tests.core;
 
 /**
@@ -14,4 +17,8 @@ public final class WikipediaConstants {
     public static String wikipediaLinks = ".mw-parser-output>p>a";
     public static String wikipediaHistory = "#ca-history>span>a";
     public static String wikipediaRevisions = ".after";
+
+    private WikipediaConstants () {
+
+    }
 }

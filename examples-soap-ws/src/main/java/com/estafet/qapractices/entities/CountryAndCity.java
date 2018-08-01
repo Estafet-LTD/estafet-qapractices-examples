@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.entities;
 
 /**
@@ -8,19 +11,19 @@ public class CountryAndCity {
     public String city;
     public String country;
 
-    public String getCity(){
+    public String getCity () {
         return city;
     }
 
-    public void setCity(String city){
+    public void setCity (String city) {
         this.city = city;
     }
 
-    public String getCountry(){
+    public String getCountry () {
         return country;
     }
 
-    public void setCountry(String country){
+    public void setCountry (String country) {
         this.country = country;
     }
 

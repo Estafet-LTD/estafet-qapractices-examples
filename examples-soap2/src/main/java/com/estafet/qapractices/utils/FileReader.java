@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.utils;
 
 import org.w3c.dom.Document;
@@ -13,6 +16,10 @@ public class FileReader {
     private static DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
     private static DocumentBuilder docBuilder;
     private static Document doc = null;
+
+    private FileReader () {
+        
+    }
 
     public static Document readFile(String fileName, String fileLocation) {
         try {

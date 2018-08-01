@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.tests.testhooks;
 
 import com.estafet.qapractices.tests.core.Context;

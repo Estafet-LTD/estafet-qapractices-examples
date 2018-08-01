@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.context;
 
 import com.google.common.collect.Maps;

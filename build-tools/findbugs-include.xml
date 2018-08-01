@@ -1,0 +1,7 @@
+<FindBugsFilter>
+    <!-- http://findbugs.sourceforge.net/manual/filter.html -->
+
+    <!-- Match everything that is not excplicitly excluded -->
+    <Match />
+
+</FindBugsFilter>

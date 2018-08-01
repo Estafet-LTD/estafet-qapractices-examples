@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+    <id>conf</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <fileSets>
+        <fileSet>
+            <excludes>
+                <exclude>target/**</exclude>
+                <exclude>idea/**</exclude>
+                <exclude>pom.xml</exclude>
+                <exclude>assembly.xml</exclude>
+                <exclude>eclipse-compiler-settings.txt</exclude>
+                <exclude>eclipse-java-and-xml-codestyle-preferences.epf</exclude>
+                <exclude>std-java-header.txt</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+</assembly>

@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.tests.core;
 
 import com.google.inject.Inject;
@@ -70,8 +73,8 @@ public class WikipediaTasks {
         final List<WebElement> revisions = tasks.findElements(WikipediaConstants.wikipediaRevisions);
 
         if (revisions.size() < numberOfRevisions) {
-            throw new TestException("Number of actual revisions is lower than the desired number. " +
-                    "Expected: " + numberOfRevisions + "\nActual: " + revisions.size());
+            throw new TestException("Number of actual revisions is lower than the desired number. "
+                    + "Expected: " + numberOfRevisions + "\nActual: " + revisions.size());
         }
 
         for (final WebElement element : revisions.subList(0, numberOfRevisions)) {

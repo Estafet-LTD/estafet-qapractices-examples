@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.models;
 
 import com.google.gson.annotations.Expose;
@@ -21,7 +24,7 @@ public class HttpBinModel {
     private String cupSize;
 
     @Expose
-    private String measures ;
+    private String measures;
 
     public String getUserName() {
         return userName;

@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.service.utils;
 
 import com.estafet.qapractices.entities.CountryAndCity;
@@ -26,6 +29,10 @@ import java.util.concurrent.TimeUnit;
  * Created by Ludmila Nenkova on 16/10/17.
  */
 public class SOAPUtils {
+
+    private SOAPUtils () {
+
+    }
 
     public static String createRequestAndResponse(String endPointUrl, String requestXML, String operationName) {
         String soapResponse = "";
@@ -63,7 +70,7 @@ public class SOAPUtils {
 
         Document doc = builder.parse(src);
         NodeList newDataSet = doc.getElementsByTagName("NewDataSet");
-        if( newDataSet != null && newDataSet.getLength() == 1) {
+        if ( newDataSet != null && newDataSet.getLength() == 1) {
 
             NodeList newDataSetList = ((Element)newDataSet.item(0)).getElementsByTagName("Table");
 

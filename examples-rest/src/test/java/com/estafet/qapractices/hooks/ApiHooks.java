@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.hooks;
 
 import static org.junit.Assert.assertTrue;
@@ -19,9 +22,9 @@ import cucumber.api.java.Before;
  * This is a hooks class for the ReST examples
  */
 public class ApiHooks {
-	
+
     private Context context;
-	private ReqResTasks reqResTask;
+    private ReqResTasks reqResTask;
 
     @Inject
     public ApiHooks(final Context context, final ReqResTasks reqResTasks) {
@@ -35,12 +38,12 @@ public class ApiHooks {
     }
     @After("@Rest2")
     public void deleteUser() {
-    	
-    	String userId = (String) context.getSavedData("new userId");
-    	
-    	final Response response = reqResTask.deleteUser(userId);
-    	System.out.println("Delete status is:" + response.getStatus());
-    	assertTrue(response.getStatus()== 204);
+
+        String userId = (String) context.getSavedData("new userId");
+
+        final Response response = reqResTask.deleteUser(userId);
+        System.out.println("Delete status is:" + response.getStatus());
+        assertTrue(response.getStatus() == 204);
 
     }
 }

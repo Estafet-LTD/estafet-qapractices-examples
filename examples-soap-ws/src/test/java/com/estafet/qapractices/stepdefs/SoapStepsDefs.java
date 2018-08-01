@@ -1,4 +1,7 @@
-package com.estafet.qapractices.stepDefs;
+/**
+ * Copyright (C) Estafet Ltd
+ */
+package com.estafet.qapractices.stepdefs;
 
 
 import com.estafet.qapractices.configuration.Constants;
@@ -21,13 +24,13 @@ public class SoapStepsDefs {
     public static String soapResponse;
 
     @When("I get cities by (.*)$")
-    public void getCities(String country){
+    public void getCities(final String country) {
         String requestXML = CitiesByCountryRequest.GET_CITIES_BY_COUNTRY_REQUEST_TEMPLATE;
-        requestXML = String.format(requestXML,country);
+        requestXML = String.format(requestXML, country);
 
         String operationName = "GetCitiesByCountry";
 
-        soapResponse = SOAPUtils.createRequestAndResponse(Constants.SOAP_SERVICE,requestXML,operationName);
+        soapResponse = SOAPUtils.createRequestAndResponse(Constants.SOAP_SERVICE, requestXML, operationName);
 
     }
 
@@ -35,7 +38,7 @@ public class SoapStepsDefs {
     public void validatResponse() throws IOException, SAXException, ParserConfigurationException {
         List<CountryAndCity> countryAndCityListXMLResponse = SOAPUtils.parseXMLString(soapResponse);
 
-        for (int i = 0; i < countryAndCityListXMLResponse.size(); i++){
+        for (int i = 0; i < countryAndCityListXMLResponse.size(); i++) {
             System.out.println(countryAndCityListXMLResponse.get(i));
         }
 

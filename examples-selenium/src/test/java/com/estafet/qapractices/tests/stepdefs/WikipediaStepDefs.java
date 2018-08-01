@@ -1,4 +1,7 @@
-package com.estafet.qapractices.tests.stepDefs;
+/**
+ * Copyright (C) Estafet Ltd
+ */
+package com.estafet.qapractices.tests.stepdefs;
 
 import com.estafet.qapractices.tests.core.WikipediaTasks;
 import com.google.inject.Inject;

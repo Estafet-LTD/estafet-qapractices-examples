@@ -1,4 +1,7 @@
-package com.estafet.qapractices.stepDefs;
+/**
+ * Copyright (C) Estafet Ltd
+ */
+package com.estafet.qapractices.stepdefs;
 
 import com.estafet.qapractices.utils.FileReader;
 import com.estafet.qapractices.utils.IConsts;

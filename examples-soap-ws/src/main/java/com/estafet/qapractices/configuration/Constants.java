@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.configuration;
 
 /**
@@ -5,5 +8,9 @@ package com.estafet.qapractices.configuration;
  */
 public class Constants {
 
-    public static String SOAP_SERVICE = "http://www.webservicex.com/globalweather.asmx?WSDL";
+    private Constants () {
+
+    }
+
+    public final static String SOAP_SERVICE = "http://www.webservicex.com/globalweather.asmx?WSDL";
 }

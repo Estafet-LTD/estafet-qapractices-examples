@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.utils;
 
 import org.w3c.dom.Document;
@@ -19,6 +22,10 @@ public class SOAPConn {
     private static SOAPConnectionFactory soapConnectionFactory;
     private static SOAPConnection soapConnection;
     private static SOAPMessage soapResponse;
+
+    private SOAPConn () {
+
+    }
 
     static {
         try {

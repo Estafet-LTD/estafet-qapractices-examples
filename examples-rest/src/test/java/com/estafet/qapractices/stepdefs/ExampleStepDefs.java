@@ -1,6 +1,9 @@
-package com.estafet.qapractices.stepDefs;
+/**
+ * Copyright (C) Estafet Ltd
+ */
+package com.estafet.qapractices.stepdefs;
 
-import com.estafet.qapractices.sampleClasses.ExampleClass;
+import com.estafet.qapractices.sampleclasses.ExampleClass;
 import cucumber.api.java.en.Given;
 
 /**

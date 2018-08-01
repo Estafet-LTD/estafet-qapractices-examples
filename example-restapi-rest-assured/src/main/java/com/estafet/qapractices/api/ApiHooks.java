@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.api;
 
 
@@ -15,38 +18,38 @@ import io.restassured.RestAssured;
 
 @ScenarioScoped
 public class ApiHooks {
-	
-	private Context context;
-	private Environment env;
-	
-	@Inject
-	public ApiHooks(Context context,Environment env ) {
-		this.context = context; 
-		this.env = env;
-		
-	}
-	@Before
+
+    private Context context;
+    private Environment env;
+
+    @Inject
+    public ApiHooks(Context context, Environment env ) {
+        this.context = context;
+        this.env = env;
+
+    }
+    @Before
     public void setScenario(final Scenario scenario) {
         this.context.setScenario(scenario);
     }
-	
-	@Before("@rest")
-	public void apiData() {
-		System.out.println("Start test");
-		/*
-		 * baseURI method will set globally the URI that you want to connect. It have to
-		 * be setted into a constructor or method. After that in given() method of
-		 * RestAssured class, this URI will be loaded automatically.
-		 * basePath method will set the end point for the API.
-		 */
-		
-		RestAssured.baseURI = env.getProperty("baseURI"); 
-		RestAssured.basePath = env.getProperty("basePath");
-		
-	}
-	@After("@rest")
-	public void after() {
-		System.out.println("End of test");
-	}
+
+    @Before("@rest")
+    public void apiData() {
+        System.out.println("Start test");
+        /*
+         * baseURI method will set globally the URI that you want to connect. It have to
+         * be setted into a constructor or method. After that in given() method of
+         * RestAssured class, this URI will be loaded automatically.
+         * basePath method will set the end point for the API.
+         */
+
+        RestAssured.baseURI = env.getProperty("baseURI");
+        RestAssured.basePath = env.getProperty("basePath");
+
+    }
+    @After("@rest")
+    public void after() {
+        System.out.println("End of test");
+    }
 
 }

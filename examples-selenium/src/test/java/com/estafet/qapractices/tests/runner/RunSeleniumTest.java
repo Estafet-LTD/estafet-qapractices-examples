@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.tests.runner;
 
 /**
@@ -18,7 +21,7 @@ import java.io.IOException;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         glue = {"com.estafet.qapractices.tests.testhooks",
-                "com.estafet.qapractices.tests.stepDefs"
+                "com.estafet.qapractices.tests.stepdefs"
         },
         features = {"src/test/resources/features/"},
         plugin = {
@@ -27,6 +30,10 @@ import java.io.IOException;
         tags = {"@Wiki"}
 )
 public class RunSeleniumTest {
+
+        private RunSeleniumTest () {
+
+        }
         /**
          * This is a JUnit annotation NOT Cucumber. It will be called after the end of the last scenario
          * and will close the geckodriver instance. Otherwise you will have an open instance after every execution.

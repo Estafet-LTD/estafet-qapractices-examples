@@ -1,4 +1,7 @@
-package com.estafet.qapractices.sampleClasses;
+/**
+ * Copyright (C) Estafet Ltd
+ */
+package com.estafet.qapractices.sampleclasses;
 
 /**
  * Created by Pesho on 01-Sep-17.

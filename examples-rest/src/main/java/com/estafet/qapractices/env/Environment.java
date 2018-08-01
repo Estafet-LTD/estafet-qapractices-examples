@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.env;
 
 import com.estafet.qapractices.exceptions.TestException;

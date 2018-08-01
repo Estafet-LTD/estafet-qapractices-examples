@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.rest;
 
 import javax.ws.rs.*;
@@ -11,7 +14,7 @@ public interface ReqResApi {
     @GET
     @Path("/users")
     @Consumes("application/x-www-form-urlencoded")
-    Response listUsers(@QueryParam("per_page") int per_page);
+    Response listUsers(@QueryParam("per_page") int perPage);
 
     @POST
     @Path("/users")

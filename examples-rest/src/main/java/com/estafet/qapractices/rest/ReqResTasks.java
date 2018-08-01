@@ -1,3 +1,6 @@
+/**
+ * Copyright (C) Estafet Ltd
+ */
 package com.estafet.qapractices.rest;
 
 import com.estafet.qapractices.env.Environment;
@@ -53,6 +56,6 @@ public class ReqResTasks {
         return new Gson().toJson(object);
     }
     public Response deleteUser(final String id) {
-    	return reqResApi.deleteUser(id);
+        return reqResApi.deleteUser(id);
     }
 }
