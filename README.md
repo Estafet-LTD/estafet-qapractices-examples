@@ -12,7 +12,7 @@ SOAP services
 | examples-rest | Set of examples for ReST testing using RestEasy |
 | examples-selenium | Set of examples for UI testing using Selenium |
 | examples-soap2 | Set of examples for SOAP testing |
-| examples-soap-ws | Set of examples for SOAP testing (alternative approach |
+| examples-soap-ws | Set of examples for SOAP testing (alternative approach) |
 
 # Getting started
 After cloning the repository you will be able to run the tests from each module. No additional configuration is required.
