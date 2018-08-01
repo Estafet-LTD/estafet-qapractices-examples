@@ -1,26 +1,25 @@
-# estafet-qapractices-examples
-Set of examples for configuring and running tests
+# Estafet QA practices examples
+This project contains a set of examples for different aspects of the QA job. It's a multi module Maven project with separate modules demonstrating how to test:
+ReST services
+User interface (via Selenium)
+SOAP services
 
-This is a multi module Maven project.
+# Project structure
+| Module | Description |
+| --- | --- |
+| example-restapi-rest-assured | Set of examples for ReST testing using RestAssured |
+| example-soap-rest-assured | Set of examples for SOAP testing using RestAssured |
+| examples-rest | Set of examples for ReST testing using RestEasy |
+| examples-selenium | Set of examples for UI testing using Selenium |
+| examples-soap2 | Set of examples for SOAP testing |
+| examples-soap-ws | Set of examples for SOAP testing (alternative approach |
 
-Currently, there is only a working example of a cucumber test being executed.
-
-Update 18/09/2017:
-* Added an environment yml file. It holds string values for environmental setup- URLs, credentials, etc.
-* Added a test environment class. It loads the yml file and sets up the environment.
-* Added a context class- a Java class with @scenarioScoped lifecycle. Used for storing scenario data.
-* Added a custom Test exception to be used inside our code.
-* Added an API class describing a few HttpBin resources used in the examples.
-* Added a class configuring ReSTEasy to use the API with public methods calling the resources.
-* Added a POJO model to be used in the examples.
-* Added new feature and step defs with ReST API examples.
-* Added Javadoc in multiple classes.
-
-Update 09/11/2017:
-* Added more ReST examples using the ReqRes service:
-  Listing users
-  Creating an user
-  Updating an user
-  Models, tasks, api
-  
-TBA
+# Getting started
+After cloning the repository you will be able to run the tests from each module. No additional configuration is required.
+Upon cloning execute:
+```
+mvn clean install
+```
+Each module has a RunTests class which executed a subset of tests from the current module based nad the `tags` option.
+## For Linux/Mac
+The Selenium tests will not run on those two OSes. The geckodriver used for Selenium 3 is only provided for Windows.
