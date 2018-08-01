@@ -20,6 +20,6 @@ Upon cloning execute:
 ```
 mvn clean install
 ```
-Each module has a RunTests class which executed a subset of tests from the current module based nad the `tags` option.
+Each module has a `RunTests` JUnit class which executed a subset of tests from the current module based nad the `tags` option.
 ## For Linux/Mac
 The Selenium tests will not run on those two OSes. The geckodriver used for Selenium 3 is only provided for Windows.
